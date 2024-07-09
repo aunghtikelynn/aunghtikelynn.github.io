@@ -3,6 +3,11 @@
     color: red;
 }
 
+h1:hover{
+    color: brown;
+    font-size: 40px;
+}
+
 body{
     background-color: rgb(150, 223, 223);
 }
