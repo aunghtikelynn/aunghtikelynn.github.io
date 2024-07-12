@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lynn Fashion</title>
+    <link rel="icon" href="Images/Logo_1.PNG">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
     <!-- start nav -->
-     <nav class="nav">
+    <nav class="nav">
         <a href=""><img src="Images/Main_Logo.png" alt="" class="nav_logo"></a>
         <ul class="nav_item">
             <li><a href="index.html">Home</a></li>
@@ -17,9 +19,49 @@
             <li><a href="index.html">Contact</a></li>
             <li><a href="index.html">Login</a></li>
             <li><a href="index.html">Register</a></li>
-            <li><a href="index.html">Heart</a></li>
-            <li><a href="index.html" class="cart_nav_item">Cart</a></li>
+            <li><a href="index.html"><i class="fa-regular fa-heart fa-xl"></i></a></li>
+            <li>
+            <a href="index.html" class="cart_nav_item"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+            <span class="cart_noti">10</span>
+            </li>
         </ul>
-     </nav>
+    </nav>
+
+    <div>
+        <img src="Images/carousal.jpg" alt="" class="carousel_img">
+        <div class="carousel_text">
+            <h2>Raining Season Promotion</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nostrum laborum deleniti quisquam animi hic dolor vero <br> culpa a odit debitis  asperiores similique, quas labore omnis</p>
+            <button class="shop_now">Shop Now</button>
+        </div>
+    </div>
+
+    <div id="icon_line">
+        <div class="order_icon">
+            <span><i class=" icon fa-solid fa-truck fa-2x" ></i></span>
+            <p><b>Fast & Free shipping</b></p>
+            <p class="icon_text">For order from $100</p>
+        </div>
+     
+        <div class="order_icon">
+            <span><i class=" icon fa-solid fa-phone-volume fa-2x"></i></span>
+            <p><b>Support 24/7</b></p>
+            <p class="icon_text">Call us anytime</p>
+        </div>
+
+        <div class="order_icon">
+            <span><i class=" icon fa-solid fa-shield-halved fa-2x"></i></span>
+            <p><b>100% Safety</b></p>
+            <p class="icon_text">Only secure payments</p>
+        </div>
+
+        <div class="order_icon">
+            <span><i class=" icon fa-solid fa-gift fa-2x"></i></span>
+            <p><b>Gift Promotion</b></p>
+            <p class="icon_text">Discounts up to 90%</p>
+        </div>
+    </div>
+
+    <script src="fontawesome/js/all.min.js"></script>
 </body>
 </html>
