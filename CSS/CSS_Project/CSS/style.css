@@ -73,20 +73,20 @@
 
 /* start icon line */
 #icon_line{
-    margin-left: 5%;
     margin-top: 30px;
+    margin-left: 80px;
 }
 .order_icon{
     border: 1px solid rgba(0, 0, 0, 0.4);
     display: inline-block;
     padding: 15px;
     width: 20%;
-    margin-right: 10px;
     border-radius: 5px;
+    margin-right: 10px;
 }
 .icon{
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .icon_text{
     color: rgba(0, 0, 0, 0.8);
