@@ -189,3 +189,126 @@
     opacity: 0.5;
 }
  /* end new arrival */
+
+ /* start subscribe */
+ .subscribe{
+    background-color: yellow;
+    padding: 50px 0px;
+    margin-top: 50px;
+ }
+ .subscribe_about{
+    width: 400px;
+    float: left;
+    margin: 0px 300px 0px 140px;
+ }
+.subscribe_image{
+    width: 300px;
+    height: 150px;
+}
+.subscribe_text{
+    margin: 10px 0px 15px 0px;
+}
+.subscribe_input{
+    width: 300px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    border-color: white;
+}
+.subscribe_btn{
+    width: 70px;
+    height: 25px;
+    outline: none;
+    border-color: green;
+    background-color: green;
+    border-radius: 0px 5px 5px 0px;
+}
+/* end subscribe */
+
+/* start news */
+.news{
+    margin: 50px 0px 20px 100px;
+}
+.new_paragraph{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px 100px 0px;
+    grid-column-gap: 40px;
+}
+.new_image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.new_paragraph>div{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.new_date{
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+}
+.read_more{
+    border: 1px solid yellow;
+    background-color: gray;
+    color: yellow;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+}
+.read_more:hover{
+    background-color: yellow;
+    color: black;
+}
+.new_text{
+    margin-left: 10px;
+}
+.new_image:hover{
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+}
+.image_hover{
+    overflow: hidden;
+    display: inline-block;
+}
+/* end news */
+
+/* start footer */
+.footer{
+    background-color: black;
+    margin-top: 50px;
+    padding: 40px 0px;
+    color: white;
+    display: grid;
+    grid-template-columns: 600px 150px 150px auto;
+}
+.footer_about{
+    margin-left: 100px;
+}
+.footer_about p{
+    width: 80%;
+}
+.footer_divided{
+    width: 100px;
+    border: 2px solid rgb(168, 144, 4);
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+.footer_nav{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.footer_adress p{
+    margin-top: 20px;
+}
+.footer_icon{
+    margin-right: 20px;
+    color: white;
+}
