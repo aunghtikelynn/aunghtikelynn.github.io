@@ -185,7 +185,7 @@ h2 a:active {
 
 @font-face {
     font-family: "playwrite";
-    src: url(Playwrite_FR_Moderne/static/PlaywriteFRModerne-ExtraLight.ttf);
+    src: url(Playwrite_FR_Moderne/PlaywriteFRModerne-VariableFont_wght.ttf);
 }
 
 .offline{

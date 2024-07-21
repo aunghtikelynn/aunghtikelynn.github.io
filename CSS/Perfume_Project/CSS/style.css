@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Start Nav */
+.nav_item{
+    float: right;
+}
+.nav_item li{
+    display: inline-block;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+.nav_item li a{
+    text-decoration: none;
+    color: black;
+}
+.nav_logo{
+    width: 120px;
+    height: 90px;
+    margin: 20px 0px 20px 100px;
+}
+.home{
+    margin-left: 200px;
+}
+.nav_input{
+    width: 200px;
+    height: 25px;
+    border-color: white;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.nav_btn{
+    width: 30px;
+    height: 30px;
+    border-color: white;
+    background-color: yellow;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.cart{
+    margin-right: 0px;
+}
+/* .nav{
+    background-color: rgb(8, 137, 189);
+} */
+/* End Nav */
+
+/* Start Bunner */
+.bunner_img{
+    width: 100%;
+    position: relative;
+}
+.bunner_text{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+}
+.bunner_heading{
+    font-size: 60px;
+    font-family: "Dancing_Script";
+    padding-bottom: 20px;
+}
+@font-face {
+    font-family: "Dancing_Script";
+    src: url(/Perfume_Project/font/static/DancingScript-Medium.ttf);
+} 
+.bunner{
+    margin-bottom: 50px;
+}
+/* End Bunner */
+
+/* Top 10 List */
+.top_10_items{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 0px 100px;
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+.top_10_img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.top_10{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.top_10_date{
+    color: grey;
+}
+.top_10_head{
+    margin-left: 100px;
+}
+.hr_line{
+    border: 2px solid skyblue;
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.top_10_items p{
+    text-align: center;
+}
+.brand_name{
+    color: grey;
+}
+.rating{
+    color: gray;
+}
+.detail_btn{
+    border: solid 1px black;
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    padding: 5px 2px 5px 2px ;
+    margin: 20px 50px 50px 0px;
+    display: inline-block;
+    float: right;
+}
+.detail_btn:hover{
+    background-color: yellow;
+}
+.detail{
+    margin-bottom: 80px;
+}
+/* End Top 10 Lists */
+
+/* Start Season */
+.types_perfume{
+    margin-left: 100px;
+}
+.type_line{
+    border: 2px solid skyblue;
+    width: 100px;
+    margin-left: 100px;
+}
+/* End Season */
+
+/* Start Summer Collection */
+.summer_img{
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-right: 80px;
+    margin-left: 150px;
+}
+.summer_paragraph{
+    display: inline-block;
+}
+.summer_head span{
+    color: skyblue;
+}
+.summer_head{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.summer_text{
+    width: 500px;
+}
+.summer{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: whitesmoke;
+}
+.summer_explore{
+    display: inline-block;
+    border: solid 1px black;
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    padding: 5px 2px 5px 2px ;
+    margin: 10px 50px 0px 0px;
+}
+.summer_explore:hover{
+    background-color: yellow;
+}
+.clear{
+    clear: both;
+}
+/* End Summer Collection */
+
+/* Start Rainy Collection */
+.rainy_img{
+    width: 500px;
+    height: 300px;
+    float: right;
+    margin-right: 150px; 
+    margin-bottom: 30px;
+}
+.winter_head span{
+    color: skyblue;
+}
+.winter_head{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.rainy_text{
+    width: 500px;
+}
+.rainy{
+    padding-top: 30px;
+    background-color: white;
+}
+.rainy_paragraph{
+    display: inline-block;
+    margin-left: 150px;
+}
+.rainy_explore{
+    display: inline-block;
+    border: solid 1px black;
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    padding: 5px 2px 5px 2px ;
+    margin: 20px 0px 0px 150px;
+}
+.rainy_explore:hover{
+    background-color: yellow;
+}
+/* End Rainy Collection */
+
+/* Start Winter Collection */
+.winter_explore{
+    display: inline-block;
+    border: solid 1px black;
+    background-color: skyblue;
+    color: black;
+    text-decoration: none;
+    padding: 5px 2px 5px 2px ;
+    margin: 20px 100px 0px 0px;
+}
+.winter_explore:hover{
+    background-color: yellow;
+}
+.winter{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color: whitesmoke;
+}
+.winter_img{
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-right: 80px;
+    margin-left: 150px;
+}
+/* End Winter Collection */
