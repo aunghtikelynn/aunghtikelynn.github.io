@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Start Nav */
+.nav_item{
+    float: right;
+}
+.nav_item li{
+    display: inline-block;
+    margin-top: 70px;
+    margin-right: 50px;
+}
+.nav_item li a{
+    text-decoration: none;
+    color: black;
+}
+.nav_logo{
+    width: 120px;
+    height: 90px;
+    margin: 20px 0px 20px 100px;
+}
+.home{
+    margin-left: 200px;
+}
+.nav_input{
+    width: 200px;
+    height: 25px;
+    border-color: white;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.nav_btn{
+    width: 30px;
+    height: 30px;
+    border-color: white;
+    background-color: yellow;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.cart{
+    margin-right: 0px;
+}
+/* End Nav */
+
+/* Start Bunner */
+.bunner_img{
+    width: 100%;
+    position: relative;
+}
+.bunner_text{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+}
+.bunner_heading{
+    font-size: 60px;
+    font-family: "Dancing_Script";
+    padding-bottom: 20px;
+}
+@font-face {
+    font-family: "Dancing_Script";
+    src: url(../font/static/DancingScript-Bold.ttf);
+} 
+.bunner{
+    margin-bottom: 50px;
+}
+/* End Bunner */
+
+/* start Top 10 List */
+.top_10_head{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.top_10_title{
+    margin-left: 100px;
+}
+.top_10_divided{
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    border: 2px solid skyblue;
+}
+.top_10_items{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    margin: 0px 50px 0px 50px;
+}
+.icon_heart{
+    float: left;
+}
+.icon_cart{
+    float: right;
+}
+.top_10_text span{
+    margin-left: 40px;
+}
+.price{
+    margin-top: 20px;
+}
