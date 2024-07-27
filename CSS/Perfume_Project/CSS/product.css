@@ -350,10 +350,10 @@
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
-    padding: 30px 200px 20px 200px;
+    padding: 40px 200px 40px 200px;
 }
 .contactus_head{
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 0px 20px 0px;
 }
 .contactus_time{
@@ -364,4 +364,26 @@
 }
 .contact_us div a{
     color: black;
+}
+/* End Contact Us */
+
+/* Start Question */
+.question_form div button{
+    cursor: pointer;
+}
+.question_head{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+.question_title{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.question_form{
+    text-align: center;
+}
+.question_name{
+    width: 300px;
+    height: 30px;
+    margin: 0px 5px 10px 5px;
 }
