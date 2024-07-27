@@ -350,4 +350,18 @@
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
+    padding: 30px 200px 20px 200px;
+}
+.contactus_head{
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+.contactus_time{
+    margin: 20px 0px 20px 0px;
+}
+.contactus_link{
+    margin-bottom: 20px;
+}
+.contact_us div a{
+    color: black;
 }
