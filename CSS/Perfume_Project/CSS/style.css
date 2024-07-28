@@ -8,17 +8,18 @@
 }
 .nav_item li{
     display: inline-block;
-    margin-top: 70px;
+    margin-top: 35px;
     margin-right: 50px;
 }
 .nav_item li a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 .nav_logo{
     width: 120px;
     height: 90px;
-    margin: 20px 0px 20px 100px;
+    margin: 0px 0px 0px 100px;
 }
 .home{
     margin-left: 200px;
@@ -102,10 +103,10 @@
     color: gray;
 }
 .detail_btn{
-    border: solid 1px black;
+    border: solid 1px rgb(68, 195, 245);
     border-radius: 5px;
-    background-color: skyblue;
-    color: black;
+    background-color: rgb(68, 195, 245);
+    color: white;
     text-decoration: none;
     padding: 5px 2px 5px 2px ;
     margin: 20px 50px 0px 0px;
@@ -116,7 +117,9 @@
     clear: both;
 }
 .detail_btn:hover{
-    background-color: yellow;
+    background: none;
+    color: rgb(68, 195, 245);
+    transition-duration: 0.5s;
 }
 /* End Top 10 Lists */
 
@@ -175,16 +178,18 @@
 }
 .summer_explore{
     display: inline-block;
-    border: solid 1px black;
+    border: solid 1px rgb(68, 195, 245);
     border-radius: 5px;
-    background-color: skyblue;
-    color: black;
+    background-color: rgb(68, 195, 245);
+    color: white;
     text-decoration: none;
     padding: 5px 2px 5px 2px ;
     margin: 10px 50px 0px 0px;
 }
 .summer_explore:hover{
-    background-color: yellow;
+    background: none;
+    color: rgb(68, 195, 245);
+    transition-duration: 0.5s;
 }
 .clear{
     clear: both;
@@ -220,32 +225,36 @@
 }
 .rainy_explore{
     display: inline-block;
-    border: solid 1px black;
+    border: solid 1px rgb(68, 195, 245);
     border-radius: 5px;
-    background-color: skyblue;
-    color: black;
+    background-color: rgb(68, 195, 245);
+    color: white;
     text-decoration: none;
     padding: 5px 2px 5px 2px ;
     margin: 20px 0px 0px 150px;
 }
 .rainy_explore:hover{
-    background-color: yellow;
+    background: none;
+    color: rgb(68, 195, 245);
+    transition-duration: 0.5s;
 }
 /* End Rainy Collection */
 
 /* Start Winter Collection */
 .winter_explore{
     display: inline-block;
-    border: solid 1px black;
-    background-color: skyblue;
+    border: solid 1px rgb(68, 195, 245);
+    background-color: rgb(68, 195, 245);
     border-radius: 5px;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 5px 2px 5px 2px ;
     margin: 20px 100px 0px 0px;
 }
 .winter_explore:hover{
-    background-color: yellow;
+    background: none;
+    color: rgb(68, 195, 245);
+    transition-duration: 0.5s;
 }
 .winter{
     padding-top: 30px;

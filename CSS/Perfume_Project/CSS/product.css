@@ -8,17 +8,18 @@
 }
 .nav_item li{
     display: inline-block;
-    margin-top: 70px;
+    margin-top: 35px;
     margin-right: 50px;
 }
 .nav_item li a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 .nav_logo{
     width: 120px;
     height: 90px;
-    margin: 20px 0px 20px 100px;
+    margin: 0px 0px 0px 100px;
 }
 .home{
     margin-left: 200px;
@@ -183,11 +184,15 @@
 
 /* Start Quick Icon */
 .quick_icon{
-    color: black;
-    background-color: skyblue;
-    border: 1px solid black;
+    color: white;
+    background-color: rgb(68, 195, 245);
+    border: 1px solid rgb(68, 195, 245);
     padding: 5px 10px 5px 10px;
     margin-right: 10px;
+}
+.quick_icon:hover{
+    background: none;
+    color: rgb(68, 195, 245);
 }
 .quick_icon_line{
     margin-top: 30px;
@@ -384,6 +389,49 @@
 }
 .question_name{
     width: 300px;
-    height: 30px;
-    margin: 0px 5px 10px 5px;
+    height: 40px;
+    margin: 0px 5px 20px 5px;
 }
+.question_box{
+    width: 620px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.question_message{
+    width: 620px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.question_order{
+    width: 620px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(68, 195, 245);
+    border: 1px solid rgb(68, 195, 245);
+    color: white;
+}
+.question_order:hover{
+    background: none;
+    color: rgb(68, 195, 245);
+    transition-duration: 0.5s;
+}
+/* End Question */
+
+/* Start Legal Info */
+.legal_para{
+    width: 60%;
+    margin-top: 50px;
+    padding: 0% 20% 0% 20%;
+    line-height: 25px;
+}
+.legal_heading{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.legal_para_title{
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+}
+/* End Legal Info */
+

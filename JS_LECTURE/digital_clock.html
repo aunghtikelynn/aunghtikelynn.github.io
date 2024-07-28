@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <p id="day"></p>
+    <p><span id="hours"></span>: <span id="minute"></span>: <span id="second"></span></p>
+
+    <script>
+        let todayDate = new Date();
+        console.log(todayDate.getDay);
+
+
+        function getSeconds(){
+            let myDate = new Date();
+            let day = myDate.getDay();
+            let hour = myDate.getHours();
+            let minute = myDate.getMinutes();
+            let second = myDate.getSeconds();
+
+            document.getElementById('hours').innerHTML = hour;
+            document.getElementById('minute').innerHTML = minute;
+            document.getElementById('second').innerHTML = second;
+        }
+
+        setInterval(getSeconds,1000);
+    </script>
+</body>
+</html>
