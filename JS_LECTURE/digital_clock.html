@@ -18,7 +18,7 @@
 
         function getSeconds(){
             let myDate = new Date();
-            let day = myDate.getDate();
+            let day = myDate.getDay();
             let hour = myDate.getHours();
             let minute = myDate.getMinutes();
             let second = myDate.getSeconds();
@@ -39,7 +39,9 @@
             minute = (minute<10) ? "0"+minute : minute;
             second = (second<10) ? "0"+second : second;
 
-            document.getElementById('day').innerHTML = day;
+            let dayname = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+            document.getElementById('day').innerHTML = dayname[day];
             document.getElementById('hours').innerHTML = hour;
             document.getElementById('minute').innerHTML = minute;
             document.getElementById('second').innerHTML = second;
