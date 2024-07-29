@@ -22,7 +22,7 @@
 
         function getSeconds(){
             let myDate = new Date();
-            let second = myDate.toLocaleString();
+            let second = myDate.getTimezoneOffset ();
             document.getElementById('myClock').innerHTML = second;
         }
 
