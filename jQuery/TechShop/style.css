@@ -1,7 +1,7 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 /* Start Nav */
 .nav p {
     display: inline-block;
@@ -73,6 +73,7 @@
     background-color: rgb(0, 106, 255);
     border-radius: 5px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 .cart_div{
     margin: 20px 0px 20px 10px;
