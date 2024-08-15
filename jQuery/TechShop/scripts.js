@@ -15,9 +15,9 @@ $(document).ready(function(){
                     <td>${v.name}</td>
                     <td>${v.price}</td>
                     <td>
-                    <button>-</button>
+                    <button class="min" data-key="${i}">-</button>
                     ${v.qty}
-                    <button>+</button>
+                    <button class="max" data-key="${i}">+</button>
                     </td>
                     <td>${v.price * v.qty}</td>
                 </tr>`
@@ -36,7 +36,7 @@ $(document).ready(function(){
         let itemsString = localStorage.getItem('shops');
         if(itemsString){
             let itemsArray = JSON.parse(itemsString);
-            if(itemsArray != 0){
+            if(itemsArray != null){
                 let count = itemsArray.length;
                 $("#count_item").text(count);
             }
@@ -84,6 +84,56 @@ $(document).ready(function(){
         
     })
 
-    
+    $('#tbody').on('click','.min',function(){
+        let key = $(this).data('key');
+        // alert(key);
+        let itemsString=localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+
+            $.each(itemsArray,function(i,v){
+                if(i == key){
+                    v.qty--;
+                    if(v.qty==0){
+                        itemsArray.splice(key,1) //itemsArray delete
+                    }
+                }
+            })
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops',itemsData);
+
+            getData();
+            count();
+        }
+    })
+
+    $('#tbody').on('click','.max',function(){
+        let key = $(this).data('key');
+        // alert(key);
+        let itemsString = localStorage.getItem('shops');
+        if(itemsString){
+            let itemsArray = JSON.parse(itemsString);
+
+            $.each(itemsArray,function(i,v){
+                if (i==key){
+                    v.qty++;
+                }
+            })
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops',itemsData);
+
+            getData();
+        }
+    })
+
+    $('#order_now').click(function(){
+        let ans = confirm('Are you sure order');
+        if(ans){
+            localStorage.removeItem('shops');
+            window.location.href="index.html";
+        }
+    })
     
 })
