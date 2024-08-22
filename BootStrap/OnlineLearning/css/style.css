@@ -1,8 +1,22 @@
 @font-face{
-    font-family: ;
+    font-family: "Roboto";
     src: url('../Roboto/Roboto-Regular.ttf');
 }
 
 *{
     font-family: "Roboto";
+}
+
+/* Navbar Start */
+.active_page{
+    color: red !important;
+}
+.nav_hover:hover{
+    color: red !important;
+}
+
+/* start carousel */
+.carousel_text{
+    top: 35%;
+    left: 10%;
 }
