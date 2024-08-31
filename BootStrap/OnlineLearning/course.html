@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HeinLearn</title>
+    <link rel="icon" href="images/logo_1.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
-    
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mx-md-4 mx-lg-5">
+            <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4 active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav_hover me-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PHP</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">Odoo</a></li>
+                            <li><a class="dropdown-item" href="#">Go</a></li>
+                            <li><a class="dropdown-item" href="#">Kotlin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4 active_page" href="course.html">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="justify-content-end me-5">
+                    <a class="btn btn-danger btn-lg" type="button" href="course.html">Get Start</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar -->
+
+
+    <script src="plugin/jquery-2.2.0.min.js"></script>
+    <script src="plugin/slick.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
 </body>
 </html>
