@@ -35,14 +35,15 @@
 /* carousel */
 .main{
     position: relative;
-    background: url(../images/bunner_1.1.jpeg);
+    background: url(../images/bunner_3.jpg);
     min-height: 100vh;
     background-size: cover;
     background-position: right;
-    opacity: 0.9;
 }
 .carousel_head{
-    font-size: 50px;
+    font-size: 60px;
+    text-shadow: 5px -5px 5px grey;
+
 }
 .carousel_text{
     margin-top: 200px;
@@ -97,9 +98,6 @@
 .comming_card{
     margin-bottom: 37px;
 }
-
-/* about us */
-
 
 /* review */
 .slick-slide img {
@@ -224,4 +222,14 @@
 }
 .footer_course{
     width: 70px;
+}
+
+/* course page */
+.course_hd{
+    color: rgb(255, 196, 102);
+}
+
+/* contact page */
+.form_bg{
+    background-color: rgb(247, 247, 247);
 }

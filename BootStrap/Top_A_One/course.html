@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- start nav bar -->
-    <nav class="navbar navbar-expand-lg nav_bg">
+    <nav class="navbar navbar-expand-md nav_bg sticky-lg-top ">
         <div class="container-fluid mx-md-4 mx-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav_hover me-4 active active_page" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link nav_hover me-4 active text-white" aria-current="page" href="index.html">Home</a>
                     </li>
                     <div class="dropdown">
                         <button data-mdb-button-init
@@ -38,7 +38,7 @@
                         </ul>
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="course.html">Course</a>
+                        <a class="nav-link nav_hover me-4 active_page" href="course.html">Course</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav_hover me-4  text-white" href="about.html">About</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link nav_hover me-4  text-white" href="login.html">Login</a>
                     </li>
                 </ul>
-                <form class="justify-content-end me-5">
+                <form class="justify-content-end me-5 d-none d-lg-block">
                     <a class="btn btn-light nav_btn" type="button" href="course.html"><i class="fa-solid fa-circle-plus me-2"></i>Apply Now</a>
                 </form>
             </div>
@@ -61,10 +61,135 @@
     </nav>
     <!-- end nav bar -->
 
-    <h1>This is Course Page</h1>
+    <!-- start carousel -->
+    <section class="main">
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="text-white carousel_text ms-2 ms-md-5 ms-lg-5">
+                        <p class="active_page text-center">Enjoy smooth learning</p>
+                        <h1 class="fw-bold carousel_head text-center">Courses</h1>
+                        <p class="text-center fw-bold fs-4">Home <span class=" course_hd"><i class="fa-solid fa-minus"></i></span> Course</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+
+    <!-- start course -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="offset-5 col-2 mb-2">
+                <p class="text-uppercase border border-warning bg-warning bg-opacity-25 rounded p-2 text-center text-warning mt-4 mt-xl-0 course_box">Discover New</p>
+            </div>
+        </div>
+        <h2 class="text-center fw-bold tm_head mb-5">Our Online Courses</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden  mt-3 border-0 shadow">
+                    <img src="images/course_1.jpg" alt="" class="card-img-top course_img_hover mt-3 mt-xl-0">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Computer Basic</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden  mt-3 border-0 shadow">
+                    <img src="images/course_2.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Excel for Office</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden mt-3 border-0 shadow">
+                    <img src="images/course_3.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Business Pagemaker</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden mt-3 border-0 shadow">
+                    <img src="images/course_4.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Photoshop for Business</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden mt-3 border-0 shadow">
+                    <img src="images/course_5.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Adobe Illustractor</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden mt-3 border-0 shadow">
+                    <img src="images/course_6.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Software Installation</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div> 
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card course_img_hidden mt-3 border-0 shadow">
+                    <img src="images/course_7.jpg" alt="" class="card-img-top course_img_hover">
+                        <div class="card-body">
+                            <a href="" class="card-title h3 text-decoration-none">Vedio Editing for Busic</a>
+                        </div>
+                        <p><span class="ms-3">12 Lectures</span><span class="float-end me-3">4 Months</span></p>
+                        <hr class="mx-3">
+                        <p>
+                            <span class="ms-3">350,000 MMK</span>
+                            <button class="btn btn-outline-warning float-end me-3">Join Now</button>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end course -->
 
     <!-- start footer -->
-    <footer class="container-fluid bg-dark">
+    <footer class="container-fluid bg-dark mt-5">
         <div class="container text-white py-5">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
@@ -76,21 +201,31 @@
                         <a href="https://t.me/topaonetelegram"><i class="fa-brands fa-telegram fa-2x mx-2"></i></a>
                         <a href="https://www.tiktok.com/@topaonecomputer?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok  fa-2x mx-2"></i></a>
                     </p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Email.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-warning" type="button" id="button-addon2">Subscribe</button>
+                      </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2">
-                    <h5 class="pt-3 ms-lg-5">Quick Links</h5>
-                    <hr class="w-25 ms-lg-5">
-                    <a href="index.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
-                    <a href="about.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>About</a>
-                    <a href="course.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Course</a>
-                    <a href="blog.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Blog</a>
+                    <h5 class="pt-3 ms-lg-3">Quick Links</h5>
+                    <hr class="w-25 ms-lg-3">
+                    <a href="index.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="about.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>About</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="course.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Course</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="blog.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Blog</a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="pt-3">Contact us</h5>
                     <hr class="w-25">
                     <p><i class="fa-solid fa-phone-volume me-3"></i>09-761746819</p>
-                    <p><i class="fa-solid fa-envelope me-3"></i>aungphyozaw@gmail.com</p>
+                    <hr class="tm_hr border-light me-lg-3">
+                    <p><i class="fa-solid fa-envelope me-3"></i>aungphyozaw239401@gmail.com</p>
+                    <hr class="tm_hr border-light me-lg-3">
                     <p><i class="fa-solid fa-location-dot me-3"></i>Pathein, Ayarwaddy Region</p>
+                    <hr class="tm_hr border-light me-lg-3">
                     <p><i class="fa-solid fa-globe me-3"></i>www.topaone.com</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
@@ -105,6 +240,7 @@
                             <p>Jan. 01, 2022</p>
                         </div>
                     </div>
+                    <hr class="tm_hr border-light me-lg-3">
                     <div class="row">
                         <div class="col-3">
                             <img src="images/logo_1.jpg" alt="" class="footer_course">
@@ -113,10 +249,6 @@
                             <p class="justify-content-between">Photoshop for Business</p>
                             <p>Jan. 01, 2022</p>
                         </div>
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Enter Email.." aria-label="Recipient's username" aria-describedby="button-addon2">
-                      <button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
                     </div>
                 </div>
             </div>
