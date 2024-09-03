@@ -233,3 +233,17 @@
 .form_bg{
     background-color: rgb(247, 247, 247);
 }
+.form_head{
+    font-size: 40px;
+    color: rgb(47, 5, 87);
+}
+.contact_fa{
+    font-size: 10px;
+    color: rgb(255, 196, 102);
+}
+.name_form{
+    height: 45px;
+}
+.message_form{
+    height: 100px;
+}
