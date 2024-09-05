@@ -248,3 +248,7 @@
     height: 100px;
 }
 
+/* course detail */
+.course_hover:hover{
+    color: rgb(255, 196, 102) !important;
+}
