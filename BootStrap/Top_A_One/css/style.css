@@ -223,6 +223,9 @@
 .footer_course{
     width: 70px;
 }
+.social_logo{
+    color: rgb(255, 196, 102);
+}
 
 /* course page */
 .course_hd{
@@ -252,3 +255,19 @@
 .course_hover:hover{
     color: rgb(255, 196, 102) !important;
 }
+
+/* login */
+.google_logo{
+    width: 25px;
+    /* height: 28px; */
+    display: inline-block;
+    float: left;
+}
+.togglePassword {
+    float: right;
+    margin-left: -25px;
+    margin-top: -30px;
+    right: 10px;
+    position: relative;
+    z-index: 2;
+  }

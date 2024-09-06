@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav_hover me-4 active active_page" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link nav_hover me-4 active text-white" aria-current="page" href="index.html">Home</a>
                     </li>
                     <div class="dropdown">
                         <button data-mdb-button-init
@@ -32,7 +32,7 @@
                           <li><a class="dropdown-item" href="#">Excel for Office</a></li>
                           <li><a class="dropdown-item" href="#">Business Pagemaker</a></li>
                           <li><a class="dropdown-item" href="#">Photoshop for Business</a></li>
-                          <li><a class="dropdown-item" href="#">Adobe Illustrator</a></li>
+                          <li><a class="dropdown-item" href="#">Illustration & Logo Design</a></li>
                           <li><a class="dropdown-item" href="#">Software Installation</a></li>
                           <li><a class="dropdown-item" href="#">Vedio Editing for Basic</a></li>
                         </ul>
@@ -47,7 +47,7 @@
                         <a class="nav-link nav_hover me-4  text-white" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="register.html">Register</a>
+                        <a class="nav-link nav_hover me-4 active_page" href="register.html">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav_hover me-4  text-white" href="login.html">Login</a>
@@ -64,33 +64,43 @@
     <h1>This is Register Page</h1>
 
     <!-- start footer -->
-    <footer class="container-fluid bg-dark">
+    <footer class="container-fluid bg-dark mt-5">
         <div class="container text-white py-5">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <img src="images/logo_1.jpg" alt="" class="footer_logo" >
                     <p>It's an ideal opportunity to begin investing your energy such that illuminates you.</p>
                     <p>
-                        <a href="https://www.facebook.com/topaonecomputercentrepathein?mibextid=JRoKGi"><i class="fa-brands fa-square-facebook fa-2x mx-2"></i></a>
-                        <a href="https://www.youtube.com/@topaonecomputer"><i class="fa-brands fa-youtube fa-2x mx-2"></i></a>
-                        <a href="https://t.me/topaonetelegram"><i class="fa-brands fa-telegram fa-2x mx-2"></i></a>
-                        <a href="https://www.tiktok.com/@topaonecomputer?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok  fa-2x mx-2"></i></a>
+                        <a href="https://www.facebook.com/topaonecomputercentrepathein?mibextid=JRoKGi" class="social_logo"><i class="fa-brands fa-square-facebook fa-2x mx-2"></i></a>
+                        <a href="https://www.youtube.com/@topaonecomputer" class="social_logo"><i class="fa-brands fa-youtube fa-2x mx-2"></i></a>
+                        <a href="https://t.me/topaonetelegram" class="social_logo"><i class="fa-brands fa-telegram fa-2x mx-2"></i></a>
+                        <a href="https://www.tiktok.com/@topaonecomputer?is_from_webapp=1&sender_device=pc" class="social_logo"><i class="fa-brands fa-tiktok  fa-2x mx-2"></i></a>
                     </p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Email.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-warning" type="button" id="button-addon2">Subscribe</button>
+                      </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2">
-                    <h5 class="pt-3 ms-lg-5">Quick Links</h5>
-                    <hr class="w-25 ms-lg-5">
-                    <a href="index.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
-                    <a href="about.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>About</a>
-                    <a href="course.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Course</a>
-                    <a href="blog.html" class="d-block text-decoration-none text-white my-3 ms-lg-5"><i class="fa-solid fa-angle-right me-2"></i>Blog</a>
+                    <h5 class="pt-3 ms-lg-3">Quick Links</h5>
+                    <hr class="w-25 ms-lg-3">
+                    <a href="index.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="about.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>About</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="course.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Course</a>
+                    <hr class="ms-lg-3 tm_hr border-light me-lg-3">
+                    <a href="contact.html" class="d-block text-decoration-none text-white my-3 ms-lg-3"><i class="fa-solid fa-angle-right me-2"></i>Contact</a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="pt-3">Contact us</h5>
                     <hr class="w-25">
                     <p><i class="fa-solid fa-phone-volume me-3"></i>09-761746819</p>
-                    <p><i class="fa-solid fa-envelope me-3"></i>aungphyozaw@gmail.com</p>
+                    <hr class="tm_hr border-light me-lg-3">
+                    <p><i class="fa-solid fa-envelope me-3"></i>aungphyozaw239401@gmail.com</p>
+                    <hr class="tm_hr border-light me-lg-3">
                     <p><i class="fa-solid fa-location-dot me-3"></i>Pathein, Ayarwaddy Region</p>
+                    <hr class="tm_hr border-light me-lg-3">
                     <p><i class="fa-solid fa-globe me-3"></i>www.topaone.com</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
@@ -98,25 +108,22 @@
                     <hr class="w-25">
                     <div class="row">
                         <div class="col-3">
-                            <img src="images/logo_1.jpg" alt="" class="footer_course">
+                            <img src="images/5.jpg" alt="" class="footer_course">
                         </div>
                         <div class="col">
                             <p class="justify-content-between">Photoshop for Business</p>
                             <p>Jan. 01, 2022</p>
                         </div>
                     </div>
+                    <hr class="tm_hr border-light me-lg-3">
                     <div class="row">
                         <div class="col-3">
-                            <img src="images/logo_1.jpg" alt="" class="footer_course">
+                            <img src="images/6.jpg" alt="" class="footer_course">
                         </div>
                         <div class="col">
-                            <p class="justify-content-between">Photoshop for Business</p>
+                            <p class="justify-content-between">Illustration & Logo Design</p>
                             <p>Jan. 01, 2022</p>
                         </div>
-                    </div>
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Enter Email.." aria-label="Recipient's username" aria-describedby="button-addon2">
-                      <button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
                     </div>
                 </div>
             </div>
