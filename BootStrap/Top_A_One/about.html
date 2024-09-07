@@ -11,54 +11,75 @@
 </head>
 <body>
     <!-- start nav bar -->
-    <nav class="navbar navbar-expand-md nav_bg sticky-lg-top ">
-        <div class="container-fluid mx-md-4 mx-lg-5">
-            <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
-            <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4 active text-white" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <div class="dropdown">
-                        <button data-mdb-button-init
-                          data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Category
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li ><a class="dropdown-item" href="computer_basic.html">Computer Basic</a></li>
-                          <li><a class="dropdown-item" href="excel_for_office.html">Excel for Office</a></li>
-                          <li><a class="dropdown-item" href="business_pagemaker.html">Business Pagemaker</a></li>
-                          <li><a class="dropdown-item" href="photoshop_for_business.html">Photoshop for Business</a></li>
-                          <li><a class="dropdown-item" href="adobe_illustractor.html">Adobe Illustrator</a></li>
-                          <li><a class="dropdown-item" href="software_installation.html">Software Installation</a></li>
-                          <li><a class="dropdown-item" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
+    <section>
+        <div class="offcanvas offcanvas-top bg-warning h-25" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <button class="btn btn-light" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" class="form-control offcanvas-title border-0" placeholder="Type & hint enter" id="offcanvasTopLabel">
+                
+                <button type="button" class="btn-close float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md nav_bg sticky-lg-top ">
+            <div class="container-fluid ms-md-4 ms-lg-5">
+                <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
+                <div class="offcanvas offcanvas-start w-50 bg-black" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link nav_hove me-2 me-lg-3 active text-white" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <div class="dropdown">
+                                <button data-mdb-button-init
+                                  data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle text-white me-2 me-lg-3" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                                  Category
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li ><a class="dropdown-item" href="computer_basic.html">Computer Basic</a></li>
+                                  <li><a class="dropdown-item" href="excel_for_office.html">Excel for Office</a></li>
+                                  <li><a class="dropdown-item" href="business_pagemaker.html">Business Pagemaker</a></li>
+                                  <li><a class="dropdown-item" href="photoshop_for_business.html">Photoshop for Business</a></li>
+                                  <li><a class="dropdown-item" href="adobe_illustractor.html">Adobe Illustrator</a></li>
+                                  <li><a class="dropdown-item" href="software_installation.html">Software Installation</a></li>
+                                  <li><a class="dropdown-item" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
+                                </ul>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="course.html">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_hover me-2 me-lg-3 active_page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="register.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="login.html">Login</a>
+                            </li>
                         </ul>
                     </div>
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4 text-white" href="course.html">Course</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  active_page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="register.html">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="login.html">Login</a>
-                    </li>
-                </ul>
+                </div>
+                <div>
+                    <button class="btn btn-light ms-5 ms-md-2 me-2 me-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler bg-body-secondary " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <form class="justify-content-end me-5 d-none d-lg-block">
                     <a class="btn btn-light nav_btn" type="button" href="course.html"><i class="fa-solid fa-circle-plus me-2"></i>Apply Now</a>
                 </form>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
+    
     <!-- end nav bar -->
 
     <!-- start carousel -->
@@ -77,8 +98,43 @@
     </section>
     <!-- end carousel -->
 
-    
-    
+    <!-- start about -->
+     <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-lg-6 img-fluid">
+                <img src="images/about_pg_1.jpg" alt="" class="w-100 ">
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <p class="text-uppercase border border-warning bg-warning bg-opacity-25 rounded p-2 text-warning mt-4 mt-xl-0 course_box">Process</p>
+                <h2 class=" fw-bold tm_head mb-4">Welcome to the Top A One Computer Center</h2>
+                <p>It started before 2019, and now we have received many reviews from participants who have completed the course and are re-using it in practical work, so we can come and attend with confidence.</p>
+            </div>
+            <!-- <div class="col-12 expand-md mt-lg-4 img-fluid">
+                <img src="images/about_pg_2.jpg" class="w-100" alt="">
+            </div> -->
+            <div class="col-12 col-lg-6 mt-5">
+                <h2 class=" fw-bold tm_head mb-4">Certificate</h2>
+                <p>Make sure to finish the course and check the homework.</p>
+                <p>Certificates will be handed over after the class, so there are conveniences in the workplace. </p>
+                <p>These are written based on good curriculum and situations you may encounter in the workplace.</p>
+            </div>
+            <div class="col-lg-6  d-none d-lg-block  mt-5 img-fluid">
+                <img src="images/about_pg_2.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-12 col-lg-6 mt-5 img-fluid">
+                <img src="images/about_pg_4.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <h2 class=" fw-bold tm_head mb-4">Become a Partner</h2>
+                <p>If you don't understand after the training, anytime you can contact me, we are ready for you. </p>
+                <p>You can watch the training videos at any time. </p>
+                <p>It's an opportunity to become a permanent partner.</p>
+                <p>Start taking new steps together with us.</p>
+            </div>
+        </div>
+     </div>
+    <!-- end about -->
+
     <!-- start footer -->
     <footer class="container-fluid bg-dark mt-5">
         <div class="container text-white py-5">

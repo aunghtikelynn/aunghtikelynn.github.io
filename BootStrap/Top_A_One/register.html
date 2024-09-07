@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- start nav bar -->
-    <nav class="navbar navbar-expand-lg nav_bg">
+    <nav class="navbar navbar-expand-lg nav_bg sticky-lg-top">
         <div class="container-fluid mx-md-4 mx-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
@@ -28,13 +28,13 @@
                           Category
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Computer Basic</a></li>
-                          <li><a class="dropdown-item" href="#">Excel for Office</a></li>
-                          <li><a class="dropdown-item" href="#">Business Pagemaker</a></li>
-                          <li><a class="dropdown-item" href="#">Photoshop for Business</a></li>
-                          <li><a class="dropdown-item" href="#">Illustration & Logo Design</a></li>
-                          <li><a class="dropdown-item" href="#">Software Installation</a></li>
-                          <li><a class="dropdown-item" href="#">Vedio Editing for Basic</a></li>
+                          <li><a class="dropdown-item" href="computer_basic.html">Computer Basic</a></li>
+                          <li><a class="dropdown-item" href="excel_for_office.html">Excel for Office</a></li>
+                          <li><a class="dropdown-item" href="business_pagemaker.html">Business Pagemaker</a></li>
+                          <li><a class="dropdown-item" href="photoshop_for_business.html">Photoshop for Business</a></li>
+                          <li><a class="dropdown-item" href="adobe_illustractor.html">Illustration & Logo Design</a></li>
+                          <li><a class="dropdown-item" href="software_installation.html">Software Installation</a></li>
+                          <li><a class="dropdown-item" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
                         </ul>
                     </div>
                     <li class="nav-item">
@@ -50,7 +50,7 @@
                         <a class="nav-link nav_hover me-4 active_page" href="register.html">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav_hover me-4  text-white" href="login.html">Login</a>
+                        <a class="nav-link nav_hover me-4  text-white " href="login.html">Login</a>
                     </li>
                 </ul>
                 <form class="justify-content-end me-5">
@@ -61,7 +61,48 @@
     </nav>
     <!-- end nav bar -->
 
-    <h1>This is Register Page</h1>
+    <!-- start login form  -->
+    <div class="container mt-5">
+        <div class="row p-5  border-0 shadow m-5">
+            <div class="d-none d-sm-block col-md-6">
+                <img src="images/login_2.jpg" class="w-100 img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <div>
+                    <p class="text-center fw-bold form_head">Register Form</p>
+                    <div class="row">
+                        <div class="col-12  mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" placeholder="Email" class="form-control name_form">
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label for="create" class="form-label">Create Password</label>
+                            <input id="password-field" type="password" class="form-control  name_form" name="create" value="">
+                            <span toggle="#password-field" class="fa-solid fa-eye-slash field-icon togglePassword "></span>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label for="confirm" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control name_form" name="confirm">
+                            <span class="fa-solid fa-eye-slash togglePassword"></span>
+                        </div>
+                        <button class="btn btn-primary offset-2 col-8  mb-3">Register</button>
+                        <div class="col-12">
+                            <p class="text-center">Already have an account?<span class="text-primary">Login</span></p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <p class="bg-primary text-white text-center rounded name_form cursor_pointer p-2"><i class="fa-brands fa-facebook float-start fs-3" style="color: #ffffff;"></i>Login with Facebook</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-center bg-white border rounded cursor_pointer p-2"><img src="images/google.png" class="google_logo" alt="">Login with Google</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login form  -->
 
     <!-- start footer -->
     <footer class="container-fluid bg-dark mt-5">
@@ -145,5 +186,20 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.togglePassword').click(function(){
+
+                $(this).toggleClass("fa-solid fa-eye");
+                var input = $($(this).attr("toggle"));
+                if (input.attr("type") == "password"){
+                    input.attr("type", "text");
+                }else{
+                    input.attr("type", "password");
+                };
+            });
+        });
+    </script>
 </body>
 </html>

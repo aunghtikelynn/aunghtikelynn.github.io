@@ -257,6 +257,9 @@
 }
 
 /* login */
+.cursor_pointer{
+    cursor: pointer;
+}
 .google_logo{
     width: 25px;
     display: inline-block;
@@ -269,4 +272,8 @@
     right: 10px;
     position: relative;
     z-index: 2;
-  }
+}
+
+.search_bar{
+    height: 10px;
+}
