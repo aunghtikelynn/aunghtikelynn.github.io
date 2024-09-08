@@ -61,6 +61,14 @@
     background-color: rgb(47, 5, 87);
 }
 
+/* bunner */
+
+.text_hover:hover{
+    color: rgb(255, 196, 102);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
 /* teaching method */
 .border_start{
     border-left: 5px solid rgb(47, 5, 87);
