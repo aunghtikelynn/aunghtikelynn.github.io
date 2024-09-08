@@ -11,75 +11,72 @@
 </head>
 <body>
     <!-- start nav bar -->
-    <section>
-        <div class="offcanvas offcanvas-top bg-warning h-25" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-            <div class="offcanvas-header">
-                <button class="btn btn-light" type="button">
+    <div class="offcanvas offcanvas-top bg-warning h-25 bg-transparent border-0" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <button class="btn border-0" type="button">
+                <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+            </button>
+            <input type="text" class="form-control offcanvas-title border-0" placeholder="Type & hint enter" id="offcanvasTopLabel">
+            
+            <button type="button" class="btn-close float-end text-bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg nav_bg sticky-lg-top ">
+        <div class="container-fluid ms-md-4 ms-lg-5">
+            <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
+            <div class="offcanvas offcanvas-start w-50 bg-dark" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav_hove me-2 me-lg-3 active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <div class="dropdown">
+                            <button data-mdb-button-init
+                              data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle text-white me-2 me-lg-3" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                              Category
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                              <li ><a class="dropdown-item text-light" href="computer_basic.html">Computer Basic</a></li>
+                              <li><a class="dropdown-item text-white" href="excel_for_office.html">Excel for Office</a></li>
+                              <li><a class="dropdown-item text-white" href="business_pagemaker.html">Business Pagemaker</a></li>
+                              <li><a class="dropdown-item text-white" href="photoshop_for_business.html">Photoshop for Business</a></li>
+                              <li><a class="dropdown-item text-white" href="adobe_illustractor.html">Illustration & Logo Design</a></li>
+                              <li><a class="dropdown-item text-white" href="software_installation.html">Software Installation</a></li>
+                              <li><a class="dropdown-item text-white" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="course.html">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-2 me-lg-3 active_page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-light ms-5 ms-md-2 me-2 me-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <input type="text" class="form-control offcanvas-title border-0" placeholder="Type & hint enter" id="offcanvasTopLabel">
-                
-                <button type="button" class="btn-close float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              
+                <button class="navbar-toggler bg-body-secondary " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
+            <form class="justify-content-end me-5 d-none d-xl-block">
+                <a class="btn btn-light nav_btn" type="button" href="course.html"><i class="fa-solid fa-circle-plus me-2"></i>Apply Now</a>
+            </form>
         </div>
-        <nav class="navbar navbar-expand-md nav_bg sticky-lg-top ">
-            <div class="container-fluid ms-md-4 ms-lg-5">
-                <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
-                <div class="offcanvas offcanvas-start w-50 bg-black" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link nav_hove me-2 me-lg-3 active text-white" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <div class="dropdown">
-                                <button data-mdb-button-init
-                                  data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle text-white me-2 me-lg-3" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                                  Category
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li ><a class="dropdown-item" href="computer_basic.html">Computer Basic</a></li>
-                                  <li><a class="dropdown-item" href="excel_for_office.html">Excel for Office</a></li>
-                                  <li><a class="dropdown-item" href="business_pagemaker.html">Business Pagemaker</a></li>
-                                  <li><a class="dropdown-item" href="photoshop_for_business.html">Photoshop for Business</a></li>
-                                  <li><a class="dropdown-item" href="adobe_illustractor.html">Adobe Illustrator</a></li>
-                                  <li><a class="dropdown-item" href="software_installation.html">Software Installation</a></li>
-                                  <li><a class="dropdown-item" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
-                                </ul>
-                            </div>
-                            <li class="nav-item">
-                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="course.html">Course</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_hover me-2 me-lg-3 active_page" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="register.html">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_hover me-2 me-lg-3 text-white" href="login.html">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <button class="btn btn-light ms-5 ms-md-2 me-2 me-lg-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button class="navbar-toggler bg-body-secondary " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <form class="justify-content-end me-5 d-none d-lg-block">
-                    <a class="btn btn-light nav_btn" type="button" href="course.html"><i class="fa-solid fa-circle-plus me-2"></i>Apply Now</a>
-                </form>
-            </div>
-        </nav>
-    </section>
-    
+    </nav>
     <!-- end nav bar -->
 
     <!-- start carousel -->

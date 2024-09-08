@@ -273,6 +273,14 @@
     position: relative;
     z-index: 2;
 }
+.togglePassword2 {
+    float: right;
+    margin-left: -25px;
+    margin-top: -30px;
+    right: 10px;
+    position: relative;
+    z-index: 2;
+}
 
 .search_bar{
     height: 10px;
