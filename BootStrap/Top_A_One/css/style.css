@@ -285,3 +285,7 @@
 .search_bar{
     height: 10px;
 }
+
+.map_height{
+    height: 500px;
+}
