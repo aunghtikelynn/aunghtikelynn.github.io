@@ -34,11 +34,11 @@
 
 /* carousel */
 .main{
-    position: relative;
-    background: url(../images/carousel.1.png);
+    /* position: relative; */
+    background: url(../images/carousel.3.png);
     min-height: 100vh;
     background-size: cover;
-    background-position: right;
+    background-position: center;
 }
 .carousel_head{
     font-size: 60px;

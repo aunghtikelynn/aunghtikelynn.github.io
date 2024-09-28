@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- start nav bar -->
+    
     <div class="offcanvas offcanvas-top bg-warning h-25 bg-transparent border-0" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
             <button class="btn border-0" type="button">
@@ -19,10 +20,10 @@
             <input type="text" class="form-control offcanvas-title border-0" placeholder="Type & hint enter" id="offcanvasTopLabel">
             
             <button type="button" class="btn-close float-end text-bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          
+        
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg nav_bg sticky-lg-top ">
+    <nav class="navbar navbar-expand-lg nav_bg fixed-top navbar-dark">
         <div class="container-fluid ms-md-4 ms-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
             <div class="offcanvas offcanvas-start w-auto bg-dark" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
@@ -33,17 +34,17 @@
                         </li>
                         <div class="dropdown">
                             <button data-mdb-button-init
-                              data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle active_page me-2 me-lg-3" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                              Category
+                            data-mdb-ripple-init data-mdb-dropdown-init class="btn dropdown-toggle active_page me-2 me-lg-3" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Category
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                              <li ><a class="dropdown-item text-light" href="computer_basic.html">Computer Basic</a></li>
-                              <li><a class="dropdown-item text-white" href="excel_for_office.html">Excel for Office</a></li>
-                              <li><a class="dropdown-item text-white" href="business_pagemaker.html">Business Pagemaker</a></li>
-                              <li><a class="dropdown-item active_page" href="photoshop_for_business.html">Photoshop for Business</a></li>
-                              <li><a class="dropdown-item text-white" href="adobe_illustractor.html">Illustration & Logo Design</a></li>
-                              <li><a class="dropdown-item text-white" href="software_installation.html">Software Installation</a></li>
-                              <li><a class="dropdown-item text-white" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
+                            <li ><a class="dropdown-item text-light" href="computer_basic.html">Computer Basic</a></li>
+                            <li><a class="dropdown-item text-white" href="excel_for_office.html">Excel for Office</a></li>
+                            <li><a class="dropdown-item text-white" href="business_pagemaker.html">Business Pagemaker</a></li>
+                            <li><a class="dropdown-item active_page" href="photoshop_for_business.html">Photoshop for Business</a></li>
+                            <li><a class="dropdown-item text-white" href="adobe_illustractor.html">Illustration & Logo Design</a></li>
+                            <li><a class="dropdown-item text-white" href="software_installation.html">Software Installation</a></li>
+                            <li><a class="dropdown-item text-white" href="vedio_editing_basic.html">Vedio Editing for Basic</a></li>
                             </ul>
                         </div>
                         <li class="nav-item">
@@ -80,19 +81,19 @@
     <!-- end nav bar -->
 
     <!-- start carousel -->
-    <section class="main">
+    <div class="main align-items-center justify-content-center d-flex">
         <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="text-white carousel_text ms-2 ms-md-5 ms-lg-5">
                         <p class="active_page text-center">Enjoy smooth learning</p>
-                        <h1 class="fw-bold carousel_head text-center">Courses</h1>
-                        <p class="text-center fw-bold fs-4">Home <span class=" course_hd"><i class="fa-solid fa-minus"></i></span> Course <span class=" course_hd"><i class="fa-solid fa-minus"></i></span>Photoshop for Business</p>
+                        <h1 class="fw-bold carousel_head text-center">Course</h1>
+                        <p class="text-center fw-bold fs-4">Home <span class=" course_hd"><i class="fa-solid fa-minus"></i></span> Course <span class=" course_hd"><i class="fa-solid fa-minus"></i></span> Photoshop for Business</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- end carousel -->
 
     <!-- start course detail -->
@@ -305,5 +306,16 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset > 100){
+                nav.classList.add('nav_bg', 'shadow');
+            }else{
+                nav.classList.remove('nav_bg','shadow');
+            }
+        });
+    </script>
 </body>
 </html>

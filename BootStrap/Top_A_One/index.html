@@ -22,7 +22,7 @@
           
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg nav_bg sticky-lg-top ">
+    <nav class="navbar navbar-expand-lg nav_bg fixed-top nav_bg">
         <div class="container-fluid ms-md-4 ms-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
             <div class="offcanvas offcanvas-start w-auto bg-dark" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
@@ -80,7 +80,7 @@
     <!-- end nav bar -->
 
     <!-- start carousel -->
-    <section class="main">
+    <div class="main d-flex">
         <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- end carousel -->
 
     <!-- start bunner -->
@@ -438,10 +438,23 @@
                   breakpoint: 520,
                   settings: {
                       slidesToShow: 1
-                  }
-              }]
-          });
-      });
-      </script>
+                    }
+                }]
+            });
+            
+            var nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('nav_bg', 'shadow');
+                }else{
+                nav.classList.remove('nav_bg','shadow');
+                }
+            });
+        });
+    </script>
+      
+
+       
 </body> 
 </html>
