@@ -54,19 +54,59 @@
     border-radius: 50%;
     color: white;
 }
-.carousel_btn{
-    border: 1px solid;
-    border-radius: 5px;
+.carousel_btn1{
+    border: 1px solid rgb(255, 196, 102);
+    background-color: rgb(255, 196, 102);
     color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    display: inline-block;
+    font-size: large;
+}
+.carousel_btn1:hover{
+    border: 1px solid rgb(47, 5, 87);
     background-color: rgb(47, 5, 87);
+    color: white;
+    transition: .5s;
+}
+.carousel_btn2{
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(255, 196, 102);
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    display: inline-block;
+    font-size: large;
+}
+.carousel_btn2:hover{
+    border: 1px solid rgb(47, 5, 87);
+    background-color: rgb(47, 5, 87);
+    color: white;
+    transition: .5s;
 }
 
 /* bunner */
 
+.text_hover{
+    position: relative;
+}
 .text_hover:hover{
     color: rgb(255, 196, 102);
-    text-decoration: underline;
-    transition: 0.3s;
+}
+.text_hover::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 196, 102);
+    transition: all .5s;
+}
+.text_hover:hover::before{
+    width: 25%;
 }
 
 /* teaching method */
