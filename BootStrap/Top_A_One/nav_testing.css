@@ -1,0 +1,42 @@
+@font-face{
+    font-family: "Roboto";
+    src: url('../Roboto/Roboto-Regular.ttf');
+}
+
+*{
+    font-family: "Roboto";
+}
+
+/* Navbar Start */
+.active_page{
+    color: rgb(255, 196, 102) !important;
+}
+.nav_hover:hover{
+    color: rgb(255, 196, 102) !important;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(47, 5, 87);
+    padding: 20px;
+    transition: top 0.3s;
+    
+}
+.navbar.hide{
+    top: -100px;
+}
+.nav_btn{
+    color: rgb(47, 5, 87);
+}
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+

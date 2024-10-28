@@ -17,6 +17,17 @@
 .nav_bg{
     background-color: rgb(47, 5, 87);
 }
+.nav_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+.nav_bg.hide{
+    transfrom: translateY(-100%);
+}
 .nav_btn{
     color: rgb(47, 5, 87);
 }
