@@ -23,7 +23,7 @@
         
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg nav_bg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid ms-md-4 ms-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
             <div class="offcanvas offcanvas-start w-auto bg-dark" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
@@ -287,14 +287,25 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
     <script>
-        var nav = document.querySelector('nav');
+        var lastScroll = 0;
+        var navbar = document.querySelector('.navbar');
 
-        window.addEventListener('scroll', function(){
-            if(window.pageYOffset > 100){
-                nav.classList.add('nav_bg', 'shadow');
-            }else{
-                nav.classList.remove('nav_bg','shadow');
+        window.addEventListener('scroll', function() {
+            var currentScroll = window.pageYOffset;
+            
+            // Debug logs
+            console.log('Last scroll:', lastScroll);
+            console.log('Current scroll:', currentScroll);
+
+            if (currentScroll > lastScroll) {
+                console.log('Scrolling down - hiding navbar');
+                navbar.classList.add('hide');
+            } else {
+                console.log('Scrolling up - showing navbar');
+                navbar.classList.remove('hide');
             }
+            
+            lastScroll = currentScroll;
         });
     </script>
 </body>

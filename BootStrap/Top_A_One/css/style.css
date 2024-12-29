@@ -14,19 +14,18 @@
 .nav_hover:hover{
     color: rgb(255, 196, 102) !important;
 }
-.nav_bg{
-    background-color: rgb(47, 5, 87);
-}
-.nav_bg{
-    position: fixed;
+.navbar{
+    position: fixed !important;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    background-color: rgb(47, 5, 87);
+    padding: 20px;
+    z-index: 9999;
+    transition: top 0.3s;
+    
 }
-.nav_bg.hide{
-    transfrom: translateY(-100%);
+.navbar.hide{
+    top: -130px;
 }
 .nav_btn{
     color: rgb(47, 5, 87);
@@ -41,6 +40,7 @@
     /*Without this, clicking will make it sticky*/
       pointer-events: none;
 }
+
 
 
 /* carousel */

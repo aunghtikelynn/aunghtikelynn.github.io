@@ -22,14 +22,14 @@
           
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg nav_bg fixed-top nav_bg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid ms-md-4 ms-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5"><img src="images/logo_1.jpg" alt="" width="100px" height="100px"></a>
             <div class="offcanvas offcanvas-start w-auto bg-dark" tabindex="-1" id="navbarNavDropdown" aria-labelledby="navbarNavDropdown">
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link nav_hove me-2 me-lg-3 active active_page" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link nav_hover me-2 me-lg-3 active active_page" aria-current="page" href="index.html">Home</a>
                         </li>
                         <div class="dropdown">
                             <button data-mdb-button-init
@@ -440,16 +440,30 @@
                 }]
             });
             
-            var nav = document.querySelector('nav');
-
-            window.addEventListener('scroll', function(){
-                if(window.pageYOffset > 100){
-                    nav.classList.add('nav_bg', 'shadow');
-                }else{
-                nav.classList.remove('nav_bg','shadow');
-                }
-            });
+            
         });
+
+        var lastScroll = 0;
+        var navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            var currentScroll = window.pageYOffset;
+            
+            // Debug logs
+            console.log('Last scroll:', lastScroll);
+            console.log('Current scroll:', currentScroll);
+
+            if (currentScroll > lastScroll) {
+                console.log('Scrolling down - hiding navbar');
+                navbar.classList.add('hide');
+            } else {
+                console.log('Scrolling up - showing navbar');
+                navbar.classList.remove('hide');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
     </script>
       
 

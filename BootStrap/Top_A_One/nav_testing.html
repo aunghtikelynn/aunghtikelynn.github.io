@@ -12,15 +12,10 @@
 <body>
    <!-- start nav bar -->
     
-    <div class="offcanvas offcanvas-top bg-warning h-25 bg-transparent border-0" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
-            <button class="btn border-0" type="button">
-                <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
-            </button>
-            <input type="text" class="form-control offcanvas-title border-0" placeholder="Type & hint enter" id="offcanvasTopLabel">
-            <button type="button" class="btn-close float-end text-bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        
-        </div>
+    <div>
+        <button class="btn border-0 search-btn" type="button">
+            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+        </button>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid ms-md-4 ms-lg-5">
@@ -75,6 +70,10 @@
             </form>
         </div>
     </nav>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search here...">
+    </div>
+    
     <!-- end nav bar -->
 
     <div class="container m-5">
@@ -108,47 +107,6 @@
     <script src="fontawesome/js/all.min.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
     <script>
-        // var nav = document.querySelector('nav');
-
-        // window.addEventListener('scroll', function(){
-        //     if(window.pageYOffset > 100){
-        //         nav.classList.add('nav_bg', 'shadow');
-        //     }else{
-        //         nav.classList.remove('nav_bg','shadow');
-        //     }
-        // });
-
-        // let prevScrollpos = window.pageYoffset;
-
-        // window.onscroll = function(){
-        //     let currentScrollPos = window.pageYoffset;
-
-        //     if (prevScrollpos < currentScrollPos) {
-        //         document.querySelector(".nav_bg").classList.add("hide");
-        //     }else {
-        //         document.querySelector(".nav_bg").classList.remove("hide");
-        //     }
-        //     prevScrollpos = currentScrollPos;
-        // }
-
-        // $(document).ready(function() {
-        //     let lastScrollTop = 0;
-            
-        //     $(window).scroll(function() {
-        //         let currentScroll = $(this).scrollTop();
-                
-        //         // Scroll direction စစ်ခြင်း
-        //         if (currentScroll > lastScrollTop && currentScroll > 50) {
-        //             // Scroll Down
-        //             $('.navbar').addClass('hidden');
-        //         } else {
-        //             // Scroll Up
-        //             $('.navbar').removeClass('hidden');
-        //         }
-                
-        //         lastScrollTop = currentScroll;
-        //     });
-        // });
 
         var lastScroll = 0;
         var navbar = document.querySelector('.navbar');
@@ -169,6 +127,46 @@
             }
             
             lastScroll = currentScroll;
+        });
+
+        //search button
+        let prevScrollpos = window.pageYOffset;
+        const navbar = document.querySelector(".navbar");
+        const searchContainer = document.querySelector('.search-container');
+        const searchBtn = document.querySelector('.search-btn');
+        
+        // Navbar hide/show on scroll
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            
+            if (prevScrollpos < currentScrollPos) {
+                navbar.classList.add("hide");
+                // navbar hide ဖြစ်တဲ့အခါ search container ကိုလည်းပိတ်မယ်
+                searchContainer.classList.remove("active");
+            } else {
+                navbar.classList.remove("hide");
+            }
+            
+            prevScrollpos = currentScrollPos;
+        }
+
+        // Search button click event
+        searchBtn.addEventListener('click', function(e) {
+            // navbar မှာ hide class မရှိတဲ့အခါမှ search ကိုဖွင့်ခွင့်ပြုမယ်
+            if (!navbar.classList.contains('hide')) {
+                searchContainer.classList.toggle('active');
+                if (searchContainer.classList.contains('active')) {
+                    document.querySelector('.search-input').focus();
+                }
+            }
+        });
+
+        // Close search when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.search-container') && 
+                !event.target.closest('.search-btn')) {
+                searchContainer.classList.remove('active');
+            }
         });
     </script>
 </body>
