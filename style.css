@@ -1,0 +1,25 @@
+@font-face{
+    font-family: "Roboto";
+    src: url('css_&_bootstrap/Roboto/Roboto-Regular.ttf');
+}
+
+*{
+    font-family: "Roboto";
+    font-size: large;
+}
+
+/* Navbar Start */
+
+.nav_hover:hover{
+    color: rgb(0, 81, 255) !important;
+}
+.logo{
+    font-size: large;
+    font-weight: bold;
+    color: #1479FB !important;
+    text-shadow: 5px #1479FB;
+    
+}
+/* navbar end  */
+
+/* start profile */

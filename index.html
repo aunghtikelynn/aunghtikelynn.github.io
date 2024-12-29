@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css_&_bootstrap/bootstrap/css/bootstrap.min.css">
+    <title>Aung Htike Lynn</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- start Nav Bar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-md-4 mx-lg-5">
+            <a href="index.html" class="navbar-brand ms-lg-5 logo">Aung Htike Lynn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-light w-auto" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" id="navbarNavDropdown">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-4 " aria-current="page" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-4" href="course.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_hover me-4" href="about.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar -->
+
+    <!-- start Intro -->
+
+    <div class="container">
+        <div class="row p-lg-5">
+            <div class="col-md-6">
+                <div class="images">
+                    <img src="css_&_bootstrap/image/profile.png" alt="" width="400" class="profile ps-5">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="">
+                    <p class="fs-4">Hello, It's Me</p>
+                    <p><span class="fs-4">I'm </span><span class="fs-2 fw-bold">Aung Htike Lynn</span></p>
+                    <p class="fs-4">Junior Web Developer</p>
+                </div>
+                <a href="" class="btn btn-primary btn-sm me-3" target="_blank">Download CV</a>
+                <a href=""class="btn btn-primary btn-sm" target="_blank">Contact</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- end Intro -->
+
+    <script src="css_&_bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
