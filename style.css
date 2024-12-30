@@ -22,4 +22,60 @@
 }
 /* navbar end  */
 
-/* start profile */
+/* start profile intro */
+.profile{
+    text-align: center;
+}
+.profile img{
+    border-radius: 5px;
+}
+.button-1{
+    border-radius: 5px;
+    border: 1px solid #1479FB;
+    background-color: #1479FB;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.button-1:hover{
+    border: 1px solid #1479FB;
+    background-color: white;
+    color: #1479FB;
+}
+.button-2{
+    border-radius: 5px;
+    border: 1px solid #1479FB;
+    background-color: white;
+    color: #1479FB;
+    padding: 5px;
+    text-decoration: none;
+}
+.button-2:hover{
+    border-radius: 5px;
+    border: 1px solid #1479FB;
+    background-color: #1479FB;
+    color: white;
+}
+.icon{
+    margin-left: 30px;
+}
+.icon li a{
+    color: black;
+}
+.icon li a:hover{
+    color: #1479FB;
+}
+/* end profile intro */
+
+/* Start Skill */
+.skill-logo img{
+    margin: 20px;
+}
+/* End Skill */
+
+/* Start Contact */
+/* .contact-icon{
+    padding-left: 150px;
+    padding-right: 150px;
+} */
+/* End contact */
