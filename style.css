@@ -67,15 +67,37 @@
 }
 /* end profile intro */
 
+/* Start About */
+.about_line{
+    border-right: 1px solid gray;
+}
+/* End About */
+
 /* Start Skill */
 .skill-logo img{
     margin: 20px;
 }
 /* End Skill */
 
-/* Start Contact */
-/* .contact-icon{
-    padding-left: 150px;
-    padding-right: 150px;
-} */
-/* End contact */
+/* Start Project */
+.pj-image-hd{
+    overflow: hidden;
+}
+.pj-image:hover{
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+}
+.card_title:hover{
+    color: #1479FB;
+}
+.card_text{
+    font-size: 15px;
+}
+
+/* End Project */
+
+/* Start Footer */
+.footer_bg{
+    background-color: #1479FB;
+}
+/* End Footer */
