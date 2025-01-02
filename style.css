@@ -57,12 +57,12 @@
     color: white;
 }
 .icon{
-    margin-left: 30px;
+    
 }
-.icon li a{
+.icon a{
     color: black;
 }
-.icon li a:hover{
+.icon a:hover{
     color: #1479FB;
 }
 /* end profile intro */
