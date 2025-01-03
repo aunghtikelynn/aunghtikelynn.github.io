@@ -41,6 +41,7 @@
     border: 1px solid #1479FB;
     background-color: white;
     color: #1479FB;
+    transition-duration: 0.5s;
 }
 .button-2{
     border-radius: 5px;
@@ -55,6 +56,7 @@
     border: 1px solid #1479FB;
     background-color: #1479FB;
     color: white;
+    transition-duration: 0.5s;
 }
 .icon{
     
@@ -64,6 +66,7 @@
 }
 .icon a:hover{
     color: #1479FB;
+    transition-duration: 0.5s;
 }
 /* end profile intro */
 
@@ -89,6 +92,7 @@
 }
 .card_title:hover{
     color: #1479FB;
+    transition-duration: 0.5s;
 }
 .card_text{
     font-size: 15px;
