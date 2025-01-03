@@ -13,24 +13,21 @@
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid mx-md-4 mx-lg-5">
             <a href="index.html" class="navbar-brand ms-lg-5 logo"><img src="css_&_bootstrap/image/logo.PNG" alt="" height="60" id="home"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-top text-bg-light w-auto" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" id="navbarNavDropdown">
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link nav_hover me-4 " aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav_hover me-4" href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav_hover me-4" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse w-auto" id="navbarScroll">
+                <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4 " aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_hover me-4" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
