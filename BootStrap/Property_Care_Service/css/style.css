@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Inner Thin";
+    src: url('font/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+*{
+    font-family: "Inner Thin";
+}
+/* Nav Start*/
+.active_page{
+    color: white;
+}
+.nav_hover:hover{
+    color: white;
+}
+.navbar{
+    
+    top: 0;
+    width: 100%;
+    background-color: darkorange;
+    padding: 20px;
+    z-index: 9999;
+    transition: top 0.3s;
+    
+}
+.droplist{
+    background-color: darkorange;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    /* Without this, clicking will make it sticky */
+      pointer-events: none;
+}
+/* Nav End*/
+
+/* Carousal Start */
+.main{
+    background: url(../images/carousal_2.png);
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+.carousel_text{
+    margin-top: 150px;
+    margin-left: 50px;
+    
+}
+.carousel_head{
+    font-size: 45px;
+    text-shadow: 5px -5px 5px grey;
+
+}
+.carousel_btn1{
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 35%;
+    display: inline-block;
+    font-size: large;
+}
+.carousel_btn2{
+    border: 1px solid darkorange;
+    background-color: white;
+    color: darkorange;
+    padding: 10px;
+    border-radius: 10px;
+    width: 35%;
+    display: inline-block;
+    font-size: large;
+}
+.tm_head{
+    font-size: 45px;
+    color: darkorange;
+}
+/* Carousal End */
+
+/* About Start */
+.about_btn1{
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 35%;
+    display: inline-block;
+    font-size: large;
+}
+.about_btn2{
+    border: 1px solid darkorange;
+    background-color: white;
+    color: darkorange;
+    padding: 10px;
+    border-radius: 10px;
+    width: 35%;
+    display: inline-block;
+    font-size: large;
+}
+/* About End */
+
+/* Footer Start */
+.footer_logo{
+    width: 35%;
+    margin-bottom: 10px;
+}
+.social_logo{
+    color: darkorange;
+}
+.tm_hr{
+    border-top: 1px dotted rgb(73, 72, 72);
+   
+}
+/* Footer End */
+
+/* Service Detail Start */
+.service_icon{
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: darkorange;
+    padding: 10px;
+    border-radius: 10px;
+    width: 23%;
+    display: inline-block;
+    font-size: small;
+}
+.service_btn{
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    font-size: larger;
+    text-decoration-line: none;
+}
+.related-card {
+    transition: transform 0.3s ease;
+}
+.related-card:hover {
+    transform: translateY(-5px); /* Mouse တင်ရင် အပေါ်လေး နည်းနည်းကြွတက်လာမယ် */
+}
+
