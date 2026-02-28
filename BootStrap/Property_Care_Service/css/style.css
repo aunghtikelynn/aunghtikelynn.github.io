@@ -16,24 +16,15 @@
     
     top: 0;
     width: 100%;
-    background-color: darkorange;
+    background-color: white;
     padding: 20px;
     z-index: 9999;
     transition: top 0.3s;
     
 }
-.droplist{
-    background-color: darkorange;
+.nav_text{
+    color: darkorange;
 }
-.dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  
-.dropdown>.dropdown-toggle:active {
-    /* Without this, clicking will make it sticky */
-      pointer-events: none;
-}
-/* Nav End*/
 
 /* Carousal Start */
 .main{
