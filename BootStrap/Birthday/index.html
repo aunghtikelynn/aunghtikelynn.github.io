@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday A_Khet_Lay</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: black; font-family: 'Arial', sans-serif; }
+        canvas { position: fixed; top: 0; left: 0; z-index: 1; }
+        .overlay-layer { position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 10; flex-direction: column; text-align: center; }
+        
+        /* Countdown & Heart */
+        #countdown-text { color: #ff3399; font-size: 5rem; text-shadow: 0 0 20px #ff3399; }
+        .beating-heart { font-size: 8rem; color: #ff3399; animation: pulse 1s infinite; display: none; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+
+        /* Bunny & Gift Animation */
+        #guitar-animation { display: none; z-index: 20; }
+        .bunny-container { 
+            display: flex; flex-direction: column; align-items: center; 
+            animation: growIn 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
+        }
+        .hb-text { color: #ff3399; font-size: 2.2rem; font-weight: bold; margin-bottom: 20px; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+        .candle { display: inline-block; animation: flicker 0.6s infinite alternate; }
+        
+        .guitar-bunny { 
+            width: 250px; height: auto; 
+            border-radius: 20px; /* ပုံဒေါင့်များကို ဝိုင်းထားသည် */
+            border: 3px solid #ff3399; 
+            box-shadow: 0 0 15px rgba(255, 51, 153, 0.5); 
+        }
+
+        @keyframes growIn { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes flicker { 0% { opacity: 0.5; text-shadow: 0 0 5px #fff; } 100% { opacity: 1; text-shadow: 0 0 15px #ffd700; } }
+
+        /* Memory Box & Collage */
+        #click-box-container { display: none; z-index: 20; cursor: pointer; transition: 0.5s; }
+        .text-box { background: rgba(255, 255, 255, 0.2); color: white; padding: 12px 25px; border-radius: 20px; backdrop-filter: blur(5px); font-size: 1.2rem; border: 1px solid white; margin-bottom: 30px; display: inline-block; }
+        .cover-img { width: 180px; height: 240px; border: 5px solid white; border-radius: 10px; box-shadow: 0 0 20px #ff3399; object-fit: cover; }
+        .pair-img { width: 140px; height: 190px; border: 3px solid white; border-radius: 8px; object-fit: cover; }
+
+        #heart-collage { display: none; position: relative; z-index: 25; }
+        .photo { position: absolute; width: 55px; height: 70px; border: 2px solid white; border-radius: 4px; opacity: 0; transition: 1.5s; }
+        .photo.show { opacity: 1; transform: translate(var(--x), var(--y)) rotate(var(--r)); }
+        
+        .hidden { display: none !important; }
+        .fade-out { opacity: 0; transform: scale(0.8); transition: 0.8s; }
+    </style>
+</head>
+<body>
+
+    <canvas id="mainCanvas"></canvas>
+
+    <div class="overlay-layer">
+        <h1 id="countdown-text">3</h1>
+        
+        <div id="heart-element" class="beating-heart">❤️</div>
+
+        <div id="guitar-animation">
+            <div class="bunny-container">
+                <div class="hb-text">
+                    <span class="candle">🕯️</span> HAPPY BIRTHDAY <span class="candle">🕯️</span>
+                </div>
+                <img src="images/tenor.gif" class="guitar-bunny" alt="Birthday Gift">
+            </div>
+        </div>
+
+        <div id="click-box-container" onclick="handleInteraction()">
+            <div id="msg-text" class="text-box">Tap to see memories... ✨</div>
+            <div id="image-area">
+                <img src="https://picsum.photos/200/300?cover" class="cover-img">
+            </div>
+        </div>
+
+        <div id="heart-collage"><div id="photo-inner"></div></div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('mainCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+        let mode = "matrix";
+        const letters = "010101HAPPYBIRTHDAYANITA";
+        const drops = Array(Math.floor(canvas.width / 16)).fill(1);
+        const stars = Array(200).fill().map(() => ({ x: Math.random()*canvas.width, y: Math.random()*canvas.height, r: Math.random()*1.5 }));
+
+        function animate() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.1)"; ctx.fillRect(0, 0, canvas.width, canvas.height);
+            if (mode === "matrix") {
+                ctx.fillStyle = "#ff3399"; ctx.font = "16px monospace";
+                drops.forEach((y, i) => {
+                    ctx.fillText(letters[Math.floor(Math.random()*letters.length)], i*16, y*16);
+                    if (y*16 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                    drops[i]++;
+                });
+            } else {
+                ctx.fillStyle = "white";
+                stars.forEach(s => { ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill(); s.y += 0.3; if(s.y > canvas.height) s.y = 0; });
+            }
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Sequential Flow
+        const countdownNumbers = ["3", "2", "1", "HAPPY", "BIRTHDAY", "A Khet Lay"];
+        let countIdx = 0;
+        const countEl = document.getElementById('countdown-text');
+        const heartEl = document.getElementById('heart-element');
+        const guitarEl = document.getElementById('guitar-animation');
+
+        const flow = setInterval(() => {
+            if(countIdx < countdownNumbers.length - 1) {
+                countIdx++;
+                countEl.innerText = countdownNumbers[countIdx];
+            } else { 
+                clearInterval(flow); 
+                countEl.style.display = 'none';
+                heartEl.style.display = 'block';
+
+                setTimeout(() => {
+                    heartEl.style.display = 'none';
+                    guitarEl.style.display = 'block';
+
+                    setTimeout(() => {
+                        guitarEl.style.display = 'none';
+                        mode = "stars";
+                        document.getElementById('click-box-container').style.display = 'block';
+                    }, 5000); 
+                }, 3000);
+            }
+        }, 1000);
+
+        // Interaction
+        let step = 0;
+        const slides = [
+            { img1: "https://picsum.photos/200/300?v=1", img2: "https://picsum.photos/200/300?v=2", text: "Together Forever ❤️" },
+            { img1: "https://picsum.photos/200/300?v=3", img2: "https://picsum.photos/200/300?v=4", text: "Best Moments ✨" }
+        ];
+
+        function handleInteraction() {
+            step++;
+            if (step <= 2) {
+                const s = slides[step-1];
+                document.getElementById('msg-text').innerText = s.text;
+                document.getElementById('image-area').innerHTML = `
+                    <div style="display:flex; gap:15px; justify-content:center;">
+                        <img src="${s.img1}" class="pair-img" style="animation: growIn 0.5s forwards">
+                        <img src="${s.img2}" class="pair-img" style="animation: growIn 0.5s forwards">
+                    </div>`;
+            } else {
+                document.getElementById('click-box-container').classList.add('fade-out');
+                setTimeout(() => {
+                    document.getElementById('click-box-container').style.display = 'none';
+                    document.getElementById('heart-collage').style.display = 'block';
+                    createSmallHeart();
+                }, 800);
+            }
+        }
+
+        function createSmallHeart() {
+            const inner = document.getElementById('photo-inner');
+            for (let i = 0; i < 28; i++) {
+                const img = document.createElement('img');
+                img.src = `https://picsum.photos/100/150?r=${i}`;
+                img.className = 'photo';
+                const t = (i/28) * Math.PI * 2;
+                const x = 16 * Math.pow(Math.sin(t), 3);
+                const y = -(13*Math.cos(t) - 5*Math.cos(2*t) - 2*Math.cos(3*t) - Math.cos(4*t));
+                img.style.setProperty('--x', `${x * 10}px`);
+                img.style.setProperty('--y', `${y * 10}px`);
+                img.style.setProperty('--r', (Math.random()*20-10)+"deg");
+                inner.appendChild(img);
+                setTimeout(() => img.classList.add('show'), i * 150);
+            }
+        }
+    </script>
+</body>
+</html>

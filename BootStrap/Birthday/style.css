@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ff3399; /* Pink color like video */
+    font-size: 5rem;
+    text-shadow: 0 0 20px #ff3399;
+}
+
+.hidden { display: none; }
+
+/* Photo Heart Animation */
+.photo-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.photo {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    border: 2px solid white;
+    transform: rotate(var(--angle)) translateY(-150px);
+    animation: burst 2s ease-out forwards;
+}
+
+@keyframes burst {
+    from { transform: scale(0) rotate(0); opacity: 0; }
+    to { transform: rotate(var(--angle)) translateY(-150px); opacity: 1; }
+}
