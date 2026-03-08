@@ -68,7 +68,7 @@
         <div id="click-box-container" onclick="handleInteraction()">
             <div id="msg-text" class="text-box">Tap to see memories... ✨</div>
             <div id="image-area">
-                <img src="https://picsum.photos/200/300?cover" class="cover-img">
+                <img src="images/img_1.png" class="cover-img">
             </div>
         </div>
 
@@ -133,8 +133,8 @@
         // Interaction
         let step = 0;
         const slides = [
-            { img1: "https://picsum.photos/200/300?v=1", img2: "https://picsum.photos/200/300?v=2", text: "Together Forever ❤️" },
-            { img1: "https://picsum.photos/200/300?v=3", img2: "https://picsum.photos/200/300?v=4", text: "Best Moments ✨" }
+            { img1: "images/img_2.jpg", img2: "images/img_3.jpg", text: "May your life be as beautiful as your dreams ❤️" },
+            { img1: "images/img_4.jpg", img2: "images/img_5.jpg", text: "may you reach your goals in no time ✨" }
         ];
 
         function handleInteraction() {
@@ -158,21 +158,50 @@
         }
 
         function createSmallHeart() {
-            const inner = document.getElementById('photo-inner');
-            for (let i = 0; i < 28; i++) {
-                const img = document.createElement('img');
-                img.src = `https://picsum.photos/100/150?r=${i}`;
-                img.className = 'photo';
-                const t = (i/28) * Math.PI * 2;
-                const x = 16 * Math.pow(Math.sin(t), 3);
-                const y = -(13*Math.cos(t) - 5*Math.cos(2*t) - 2*Math.cos(3*t) - Math.cos(4*t));
-                img.style.setProperty('--x', `${x * 10}px`);
-                img.style.setProperty('--y', `${y * 10}px`);
-                img.style.setProperty('--r', (Math.random()*20-10)+"deg");
-                inner.appendChild(img);
-                setTimeout(() => img.classList.add('show'), i * 150);
-            }
+        const inner = document.getElementById('photo-inner');
+        
+        // ၁။ သုံးမယ့်ပုံတွေကို Array ထဲ အရင်ထည့်ပါ
+        const myPhotos = [
+            "images/img_6.jpg", 
+            "images/img_7.jpg", 
+            "images/img_simple.jpg",
+            "images/img_8.jpg",
+            "images/img_9.jpg", 
+            "images/img_simple.jpg",
+            "images/img_10.jpg",
+            "images/img_11.jpg",
+            "images/img_simple.jpg",
+            "images/img_12.jpg",
+            "images/img_13.jpg",
+            "images/img_simple.jpg",
+            "images/img_14.jpg",
+            "images/img_15.jpg",
+            "images/img_simple.jpg",
+
+        ];
+
+        for (let i = 0; i < 28; i++) {
+            const img = document.createElement('img');
+            
+            // ၂။ ရှိတဲ့ပုံ ၃ ပုံကို အလှည့်ကျ ပြန်သုံးဖို့ % (remainder) ကို သုံးပါမယ်
+            // i က 0 ဖြစ်ရင် img_6, 1 ဖြစ်ရင် img_7, 2 ဖြစ်ရင် img_8, 3 ဖြစ်ရင် img_6 ပြန်ဖြစ်ပါမယ်
+            img.src = myPhotos[i % myPhotos.length];
+            
+            img.className = 'photo';
+            
+            // နှလုံးပုံဖော်ရန် တွက်ချက်မှုများ
+            const t = (i / 28) * Math.PI * 2;
+            const x = 16 * Math.pow(Math.sin(t), 3);
+            const y = -(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+            
+            img.style.setProperty('--x', `${x * 10}px`);
+            img.style.setProperty('--y', `${y * 10}px`);
+            img.style.setProperty('--r', (Math.random() * 20 - 10) + "deg");
+            
+            inner.appendChild(img);
+            setTimeout(() => img.classList.add('show'), i * 150);
         }
+    }
     </script>
 </body>
 </html>
